@@ -1,55 +1,63 @@
 ---
-layout: index-layout
-subject: My Email Templates
+layout: spectrum
+subject: Your preferred customer offer is here
 ---
+<!-- Header -->
+<container class="container">
+    <row class="email-header">
+        <columns>
+            <a href="#">
+            <img src="{{root}}/assets/img/spectrum-blue.png">
+            <img src="{{root}}assets/img/deals-header.png">
+            </a>
 
-<spacer size="16"></spacer>
-
-<container>
-
-  <spacer size="24"></spacer>
-  
-  <row>
-    <columns small="12">
-
-    <p class="lead">Hi there!</p>
-    <p style="color: #484848; line-height: 1.5;">Thanks for downloading <a href="https://get.foundation/emails/docs/">Foundation for Emails!</a> Your days of coding up painful HTML emails are officially over. You’ll soon be cranking out some slick, responsive emails in no time! To help get you up and running, we've put together 11 templates for the most common email use cases including newsletters, transactional emails, and marketing blasts. Feel free to customize them to your hearts content.</p>
-
-    <spacer size="16"></spacer>
-
-    <center>
-      <menu class="vertical">
-        <item href="{{root}}basic.html" target="_blank">Basic Template</item>
-        <item href="{{root}}drip.html" target="_blank">Drip Template</item>
-        <item href="{{root}}hero.html" target="_blank">Hero Template</item>
-        <item href="{{root}}marketing.html" target="_blank">Marketing Template</item>
-        <item href="{{root}}newsletter.html" target="_blank">Newsletter Template</item>
-        <item href="{{root}}newsletter-2.html" target="_blank">Newsletter 2 Template</item>
-        <item href="{{root}}order.html" target="_blank">Order Template</item>
-        <item href="{{root}}password.html" target="_blank">Password Template</item>
-        <item href="{{root}}sidebar.html" target="_blank">Sidebar Template</item>
-        <item href="{{root}}sidebar-hero.html" target="_blank">Sidebar Hero Template</item>
-        <item href="{{root}}welcome.html" target="_blank">Welcome Template</item>
-      </menu>
-    </center>
-
-    <spacer size="16"></spacer>
-
-    <p>Happy Coding,</p>
-    <p>The Foundation Team</p>
-
-
-    <spacer size="16"></spacer>
-
+        </columns>
+    </row>
+    <row class="see-deals">
+        <columns class="text-center">
+                <a href="#" class="text-center">
+                <center style="text-align: center;">
+                    <img src="{{root}}/assets/img/see-deals.png" alt="See my Spectrum Deals" title="See my Spectrum Deals">
+                </center>
+                </a>
+                {{#phoneNumber}}1-877-959-1755{{/phoneNumber}}
+        </columns>
+    </row>
+    <row class="sub-header">
+        <columns>
+        <h3 style="font-weight: 700;" class="text-center">NO CONTRACTS • NO DEPOSIT!</h3>
+        <h3 class="text-center">No installation fees or cable box needed</h3>
+        </columns>
+    </row>
+    <row class="streaming-channels">
+        <columns>
+            <a href="#">
+            <center><img src="{{root}}/assets/img/pc-monitor.png" alt="Television Icon"></center>
+            </a>
+        <h4 class="text-center">Stream more than <span class="special-text">60+</span> live TV channels<br> + <span class="special-text">FREE</span> On Demand.</h4>
+        <a href="#">
+        <center style="text-align: center;">
+            <img src="{{root}}/assets/img/see-deals.png" alt="See my Spectrum Deals" title="See my Spectrum Deals">
+        </center>
+        </a>
+        {{#phoneNumber}}1-877-959-1755{{/phoneNumber}}
     </columns>
-  </row>
+    </row>
+    <!-- Spectrum App Section-->
+    <row class="spectrum-app">
+        <columns class="spectrum-app-container">
+        <!-- Left -->
+        <row>
+            <columns class="left-container">
+                <h4>Get the Spectrum TV App FREE and watch live TV in any room</h4>
+                <p>Download the <b>FREE</b> Spectrum TV App† to your smart TV or mobile device, and get instant access to thousands of <b>FREE</b> On Demand movies and shows to watch them on your schedule anywhere you go.</p>
+                <a href="#"><img src="{{root}}/assets/img/see-deals.png" alt="See my Spectrum Deals" title="See my Spectrum Deals"></a>
+                <p class="call-darkblue" style="margin-bottom:20px">OR CALL <u>1-877-959-1755</u></p>
+            </columns>
+            <!-- Right -->
+            <columns class="right-container">
+                <a href="#"><img src="{{root}}/assets/img/tablet.png" alt="Spectrum App" title="Spectrum App"></a>
+            </columns>
+        </row>
+    </row>
 </container>
-
-<spacer size="16"></spacer>
-
-<center>
-  <small>Keep on keepin' on. &lt;3 <a style="color: #cacaca; text-decoration: underline;" href="https://zurb.com/">ZURB</a> </small>
-</center>
-
-<spacer size="16"></spacer>
-

@@ -15,6 +15,7 @@ coming soon....
 dark blue : #003057;
 blue text: #0099d8;
 orange text: #faa41a;
+footer grey: #EFEFEF;
 
 ```
 
