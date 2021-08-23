@@ -33,11 +33,20 @@ html,
 }
 
 .email-header{
+  & .first{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  @media only screen and (max-width:#{$global-breakpoint}){
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    }
+  }
   .columns{
     padding-right: 0px !important;
     padding-left: 0px !important;
+    }
+    
   }
-}
 .see-deals{
   background: $spectrum-darkblue;
   background-color: $spectrum-darkblue;
@@ -61,6 +70,9 @@ html,
   h3{
     color: $spectrum-lightblue;
     margin-bottom: 0px;
+    @media only screen and (max-width:#{$global-breakpoint}){
+      font-size: 18px !important;
+    }
   }
 }
 .streaming-channels{
@@ -73,6 +85,9 @@ html,
   h4{
     color:white;
     line-height: 1.3;
+    @media only screen and (max-width:#{$global-breakpoint}){
+      font-size: 1.6rem !important;
+    }
   }
 }
 .spectrum-app{
@@ -87,9 +102,25 @@ html,
         margin-bottom: 20px;
         line-height: 1.2;
       }
+      h4,p{
+        @media only screen and (max-width:#{$global-breakpoint}){
+          text-align: center !important;
+        }
+      }
+      img{
+        @media only screen and (max-width:#{$global-breakpoint}){
+          margin: 0 auto;
+        }
+      }
     }
+
     .right-container{
       vertical-align: middle;
+      img{
+        @media only screen and (max-width:#{$global-breakpoint}){
+          margin: 0 auto;
+        }
+      }
     }
   }
   
