@@ -33,11 +33,15 @@ html,
 }
 
 .email-header{
-  .columns{
+  .header-column{
     padding-right: 0px !important;
     padding-left: 0px !important;
+    @media only screen and (max-width:#{$global-breakpoint}){
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+      }
+    }
   }
-}
 .see-deals{
   background: $spectrum-darkblue;
   background-color: $spectrum-darkblue;
@@ -61,6 +65,9 @@ html,
   h3{
     color: $spectrum-lightblue;
     margin-bottom: 0px;
+    @media only screen and (max-width:#{$global-breakpoint}){
+      font-size: 18px !important;
+    }
   }
 }
 .streaming-channels{
