@@ -6,6 +6,10 @@ This is a screenshot of the full page. I will go purely by this image and not lo
 
 <img src='./src/assets/img/screencapture-mail-google-mail-u-0-2021-08-23-15_46_23.png' style="width:500px;">
 
+## Remaining items
+- [ ]  Turn Telephone numbers to real links
+- [ ] Move static text into data files (JSON)
+
 ## Current Result
 
 coming soon....
@@ -43,6 +47,7 @@ Below are some tricks based on the Foundations documentation, or some that aren'
 There's a lot to this, depending on the situation. A couple I'll highlight for my own sake in the future.
 1. Vertical Alignment (for mobile): Target the `<column>`, as it acts as the `<th>` tag once compiled. 
 <img src="./screenshots/vertical-alignment02.png">
+
 ```css
 .spectrum-logo__container{
       vertical-align: middle;
