@@ -85,7 +85,7 @@ html,
 .spectrum-app{
   .spectrum-app-container{
     padding-left: 24px !important;
-    padding-right: 15px !important;
+    padding-right: 5px !important;
     .left-container{
       h4{
         color: $spectrum-lightblue;
@@ -93,6 +93,15 @@ html,
         margin-top: 24px;
         margin-bottom: 20px;
         line-height: 1.2;
+      }
+      .app-image{
+        width: 300px;
+        padding-top: 45px;
+        padding-left: 20px;
+        margin-left: 20px;
+      }
+      p{
+        width:280px;
       }
     }
     .right-container{
