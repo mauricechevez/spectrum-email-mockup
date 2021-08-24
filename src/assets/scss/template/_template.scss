@@ -93,16 +93,31 @@ html,
         margin-top: 24px;
         margin-bottom: 20px;
         line-height: 1.2;
+        @media only screen and (max-width:#{$global-breakpoint}) {
+          text-align: center !important;
+        }
+      }
+      p{
+        width:280px;
+        @media only screen and (max-width:#{$global-breakpoint}) {
+          // margin: 0 auto !important;
+          text-align: center;
+          width: 100%;
+        }
       }
       .app-image{
         width: 300px;
         padding-top: 45px;
         padding-left: 20px;
         margin-left: 20px;
+        float:right;
+        @media only screen and (max-width:#{$global-breakpoint}) {
+          float: none !important;
+          margin: 0 auto !important;
+          padding-top: 0;
+        }
       }
-      p{
-        width:280px;
-      }
+      
     }
     .right-container{
       vertical-align: middle;
