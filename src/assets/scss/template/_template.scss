@@ -94,7 +94,15 @@ html,
   .spectrum-app-container{
     padding-left: 24px !important;
     padding-right: 15px !important;
+    .spectrum-app__left-col, .spectrum-app__right-col{
+      @media only screen and (max-width:#{$global-breakpoint}) {
+      display: block !important;
+      width:100% !important;
+      }
+    }
+  }
     .left-container{
+      outline: 1px solid red;
       h4{
         color: $spectrum-lightblue;
         font-weight: 700;
@@ -113,18 +121,35 @@ html,
         }
       }
     }
-
     .right-container{
-      vertical-align: middle;
+      & table > tbody > tr > th{
+      }
+      outline: 1px solid blue;
       img{
         @media only screen and (max-width:#{$global-breakpoint}){
           margin: 0 auto;
         }
       }
     }
+    
   }
   
+
+.testing{
+  .test-left{
+    @media only screen and (max-width:#{$global-breakpoint}){
+      display: block !important;
+      width:100% !important
+    }
+  }
+  .test-right{
+    @media only screen and (max-width:#{$global-breakpoint}){
+      display: block !important;
+      width:100% !important
+    }
+  }
 }
+
 .footer{
   background:#EFEFEF;
   background-color:#EFEFEF ;
