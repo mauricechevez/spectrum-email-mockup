@@ -36,6 +36,24 @@ module.exports = function(phoneNumber){
 ```html
 {{#phoneNumber}}1-877-959-1755{{/phoneNumber}}
 ```
+---
+# Tips 'n Tricks
+Below are some tricks based on the Foundations documentation, or some that aren't.
+## Centering
+There's a lot to this, depending on the situation. A couple I'll highlight for my own sake in the future.
+1. Vertical Alignment (for mobile): Target the `<column>`, as it acts as the `<th>` tag once compiled. 
+<img src="./screenshots/vertical-alignment02.png">
+```css
+.spectrum-logo__container{
+      vertical-align: middle;
+```
+```html
+<row class="footer">
+        <columns large="4" small="12" class="spectrum-logo__container">
+            <a href="#"><img src="{{root}}assets/img/spectrum-grey.png" alt="Spectrum"></a>
+        </columns>
+```
+
 
 
 # Copyright Notice
