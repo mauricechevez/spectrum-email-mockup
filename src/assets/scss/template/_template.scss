@@ -211,6 +211,25 @@ html,
   }
 }
 
+.maurice{
+  .maurice-footer{
+    background-color:$success-color ;
+    background:$success-color;
+    .columns{
+      padding-top: 10px;
+    }
+    p{
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+    img{
+      width:20px;
+      float: right; 
+    }
+  }
+}
+
 // Full Width Headers
 .header {
   background: #8a8a8a;
