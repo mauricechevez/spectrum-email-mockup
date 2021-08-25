@@ -30,10 +30,13 @@ footer grey: #EFEFEF;
 * Javascript (through Panini)
 ---
 ## Helpers
-A simple helper, since I noticed it was repeated code throughout. Just adding a place for someone to add a phone number so it is styled as intended. If the number were to ever change, just replace the number between the handlbar code.
+~~A simple helper, since I noticed it was repeated code throughout. Just adding a place for someone to add a phone number so it is styled as intended. If the number were to ever change, just replace the number between the handlbar code.~~
+Originally I thought a phone number helper would be useful. When creating the JSON file, I decided it would be easier to move the number the JSON file, which allowed me to better control the styling, since the phone number has 2 different styles in the email, though its placed in 3 sections.
+
+**NO LONGER IN USE - Leaving for historical reason**
 ```js
 module.exports = function(phoneNumber){
-    const blueBoldText = `<p class="text-center call">or call <u>${phoneNumber.fn(this)}</u></p>`;
+    const blueBoldText = `<p class="text-center call">or call ${phoneNumber.fn(this)}</p>`;
     return blueBoldText;
 }
 ```
@@ -46,6 +49,7 @@ Below are some tricks based on the Foundations documentation, or some that aren'
 ## Centering
 There's a lot to this, depending on the situation. A couple I'll highlight for my own sake in the future.
 1. Vertical Alignment (for mobile): Target the `<column>`, as it acts as the `<th>` tag once compiled. 
+
 <img src="./screenshots/vertical-alignment02.png">
 
 ```css
@@ -55,10 +59,34 @@ There's a lot to this, depending on the situation. A couple I'll highlight for m
 ```html
 <row class="footer">
         <columns large="4" small="12" class="spectrum-logo__container">
-            <a href="#"><img src="{{root}}assets/img/spectrum-grey.png" alt="Spectrum"></a>
+            <a href="{{spectrumData}}.marketingLink}}"><img src="{{root}}assets/img/spectrum-grey.png" alt="Spectrum"></a>
         </columns>
 ```
 
+## Padding
+Usually adding a class to each row and column helps with this, but sometimes the framework is stubborn. In the case of the header, when in mobile view, it would add the default 16px padding left and right, even though I overwrote the rule. The solution was to add the HTML element **plus** the class name.
+
+![mobile padding issue](screenshots/mobile-padding-issue.png)
+
+**Solution**
+```css
+.email-header{
+    /* Adding the **th** selector with the class name fixed the padding issue */
+  th.header-column{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    @media only screen and (max-width:#{$global-breakpoint}){
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+      }
+    }
+  }
+
+```
+
+
+## Dynamic Data
+From looking at the other marketing emails from Spectrum, it seems like the only items that don't change as far as design is concerned is the footer. Therefore, I will move the links and telephone numbers, and footer text to the data file for panini to handle.
 
 
 # Copyright Notice

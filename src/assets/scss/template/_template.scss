@@ -25,6 +25,7 @@ html,
     font-size: 14px;
     font-weight: 600;
     margin-top: 10px!important;
+
 }
 
 .call-lightblue{
@@ -37,7 +38,7 @@ html,
 }
 
 .email-header{
-  .header-column{
+  th.header-column{
     padding-right: 0px !important;
     padding-left: 0px !important;
     @media only screen and (max-width:#{$global-breakpoint}){
@@ -87,9 +88,12 @@ html,
   }
 }
 .spectrum-app{
-  .spectrum-app-container{
+  th.spectrum-app-container{
     padding-left: 24px !important;
-    padding-right: 5px !important;
+    padding-right: 5px;
+    @media only screen and (max-width:#{$global-breakpoint}){
+      padding-right: 25px !important;
+    }
     .left-container{
       h4{
         color: $spectrum-lightblue;
@@ -105,8 +109,8 @@ html,
         width:280px;
         @media only screen and (max-width:#{$global-breakpoint}) {
           // margin: 0 auto !important;
-          text-align: center;
-          width: 100%;
+          text-align: center !important;
+          width: 100% !important;
         }
       }
       .app-image{
@@ -179,7 +183,7 @@ html,
     padding-bottom: 16px;
     & > table > tbody > tr > th{
       @media only screen and (max-width: #{$global-breakpoint}){
-        text-align: center;
+        text-align: center !important;
       }
     }
     

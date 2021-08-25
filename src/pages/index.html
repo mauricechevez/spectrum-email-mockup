@@ -5,9 +5,9 @@ subject: Your preferred customer offer is here
 <!-- Header -->
 <container class="container">
     <row class="email-header">
-        <columns class="header-column" style="padding-right: 0 !important; padding-left: 0 !important;">
+        <columns class="header-column">
             <a href="#">
-            <img src="{{root}}/assets/img/spectrum-blue.png">
+            <img src="{{root}}assets/img/spectrum-blue.png">
             <img src="{{root}}assets/img/deals-header.png">
             </a>
         </columns>
@@ -16,10 +16,10 @@ subject: Your preferred customer offer is here
         <columns class="text-center">
                 <a href="#" class="text-center">
                 <center style="text-align: center;">
-                    <img src="{{root}}/assets/img/see-deals.png" alt="See my Spectrum Deals" title="See my Spectrum Deals">
+                    <img src="{{root}}assets/img/see-deals.png" alt="See my Spectrum Deals" title="See my Spectrum Deals">
                 </center>
                 </a>
-                {{#phoneNumber}}1-877-959-1755{{/phoneNumber}}
+                <p class="call-lightblue text-center" style="margin-bottom:20px">OR CALL <a href="tel:{{spectrumData.phoneNumber}}" class="call-lightblue" style="text-decoration: underline;">{{spectrumData.phoneNumber}}</a></p>
         </columns>
     </row>
     <row class="sub-header">
@@ -31,15 +31,15 @@ subject: Your preferred customer offer is here
     <row class="streaming-channels">
         <columns>
             <a href="#">
-            <center><img src="{{root}}/assets/img/pc-monitor.png" alt="Television Icon"></center>
+            <center><img src="{{root}}assets/img/pc-monitor.png" alt="Television Icon"></center>
             </a>
         <h4 class="text-center">Stream more than <span class="special-text">60+</span> live TV channels<br> + <span class="special-text">FREE</span> On Demand.</h4>
         <a href="#">
         <center style="text-align: center;">
-            <img src="{{root}}/assets/img/see-deals.png" alt="See my Spectrum Deals" title="See my Spectrum Deals">
+            <img src="{{root}}assets/img/see-deals.png" alt="See my Spectrum Deals" title="See my Spectrum Deals">
         </center>
         </a>
-        {{#phoneNumber}}1-877-959-1755{{/phoneNumber}}
+        <p class="call-lightblue text-center" style="margin-bottom:20px">OR CALL <a href="tel:{{spectrumData.phoneNumber}}" class="call-lightblue" style="text-decoration: underline;">{{spectrumData.phoneNumber}}</a></p>
     </columns>
     </row>
     <!-- Spectrum App Section-->
@@ -48,13 +48,12 @@ subject: Your preferred customer offer is here
         <!-- Left -->
         <row>
             <columns class="left-container">
-                <a href="#"><img src="{{root}}/assets/img/tablet.png" alt="Spectrum App" title="Spectrum App" class="app-image"></a>
+                <a href="#"><img src="{{root}}assets/img/tablet.png" alt="Spectrum App" title="Spectrum App" class="app-image"></a>
                 <h4>Get the Spectrum TV App FREE and watch live TV in any room</h4>
                 <p>Download the <b>FREE</b> Spectrum TV App† to your smart TV or mobile device, and get instant access to thousands of <b>FREE</b> On Demand movies and shows to watch them on your schedule anywhere you go.</p>
-                <a href="#"><img src="{{root}}/assets/img/order-button.png" alt="See my Spectrum Deals" title="See my Spectrum Deals" class="order-btn"></a>
-                <p class="call-darkblue" style="margin-bottom:20px">OR CALL <u>1-877-959-1755</u></p>
+                <a href="#"><img src="{{root}}assets/img/order-button.png" alt="See my Spectrum Deals" title="See my Spectrum Deals" class="order-btn"></a>
+                <p class="call-darkblue" style="margin-bottom:20px">OR CALL <a href="tel:{{spectrumData.phoneNumber}}" class="call-darkblue" style="text-decoration: underline;">{{spectrumData.phoneNumber}}</a></p>
             </columns>
-
         </row>
     </row>
 </container>
