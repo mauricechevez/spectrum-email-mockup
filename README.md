@@ -2,15 +2,12 @@
 This is recreation of the marketing email I found recently in my own mailbox. Looking at this one, compared to the rest, seemed to stand out. It loaded fast, and wasn't just text, or just pictures. It was the right balance of both, so I wish to recreate it to see if I can achieve this. 
 
 ## Completed Results
-The email is completely responsive and has been tested in Gmail (desktop and Android mobile app)
+The email is **fully responsive** and has been tested in Gmail (desktop and Android mobile app).
 
-<div class="container" style="display:flex; align-items:center">
-    <div><a href="http://spectrum-mockup.s3-website-us-east-1.amazonaws.com/">
-    <img src="src/assets/img/screencapture-mail-google-mail-u-0-2021-08-23-15_46_23.png" style="width:200px;padding-right:20px">
-    </a>
-    </div>
-    <div><a href="http://spectrum-mockup.s3-website-us-east-1.amazonaws.com/"><h1>View the Live Site</h1></a></div>
-</div>
+**[View The Live Site](http://spectrum-mockup.s3-website-us-east-1.amazonaws.com/)**
+
+<a href="http://spectrum-mockup.s3-website-us-east-1.amazonaws.com/"><img src="./screenshots/completed-desktop.png"></a>
+
 
 ## Original Email 
 This is a screenshot of the full page. I will go purely by this image and not look at the code from gmail, as it gmail adds their own code, and to practice using the [Foundations Email](https://github.com/foundation/foundation-emails) framework, as for the most part, it does save some time when compared to creating tables, rows and columns manually!.
